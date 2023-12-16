@@ -2,23 +2,62 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Your Website Title</title>
+    <title>Aidan Gu Website</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Additional inline styles for demonstration purposes */
+        .container {
+            text-align: center;
+            margin-top: 50px;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to Your Website</h1>
-        <!-- Your navigation, header content, etc. can go here -->
+        <h1>Welcome to Aidan Gu's Website</h1>
     </header>
 
-    <main>
-        <!-- Your main content goes here -->
-    </main>
+    <div class="container">
+        <h2>Choose an Action:</h2>
+        <button id="btn1">Button 1</button>
+        <button id="btn2">Button 2</button>
+        <button id="btn3">Button 3</button>
+    </div>
 
     <footer>
-        <!-- Footer content -->
+        <p>© 2023 AidanGu Website. All rights reserved.</p>
     </footer>
 
-    <script src="script.js"></script> <!-- Include this if you have a JavaScript file -->
+    <script src="script.js"></script>
+    <script>
+        // JavaScript to handle button clicks
+        document.getElementById('btn1').addEventListener('click', function() {
+            alert('Button 1 was clicked!');
+            // Add more actions for Button 1 here
+        });
+
+        document.getElementById('btn2').addEventListener('click', function() {
+            alert('Button 2 was clicked!');
+            // Add more actions for Button 2 here
+        });
+
+        document.getElementById('btn3').addEventListener('click', function() {
+            alert('Button 3 was clicked!');
+            // Add more actions for Button 3 here
+        });
+    </script>
 </body>
 </html>
