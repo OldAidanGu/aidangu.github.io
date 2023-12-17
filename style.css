@@ -4,19 +4,34 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f8f8f8;
     color: #333;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
 }
 
-header, footer {
+header {
     background-color: #333;
     color: #fff;
     text-align: center;
     padding: 20px 0;
 }
 
-header h1, nav a {
-    margin: 0;
+nav {
+    margin-bottom: 20px;
+}
+
+nav a {
+    margin: 0 10px;
     color: #fff;
     text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #3498db;
+}
+
+h1 {
+    margin: 0;
+    font-size: 28px;
 }
 
 main {
@@ -50,10 +65,12 @@ main {
 
 .button:hover {
     background-color: #2980b9;
+    transform: scale(1.05);
 }
 
 footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
 }
