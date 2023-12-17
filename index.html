@@ -2,32 +2,79 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Map-Like Website</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Aidan Gu Website</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: #3498db;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #f0f0f0;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: calc(100vh - 120px);
+        }
+
+        #map {
+            width: 80%;
+            height: 400px;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background-color: #3498db;
+            color: #fff;
+            text-align: center;
+            padding: 15px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <div class="top-bar">
-            <div class="logo">
-                <img src="https://via.placeholder.com/80" alt="Logo">
-            </div>
-            <nav>
-                <a href="#">Explore</a>
-                <a href="#">Favorites</a>
-                <a href="#">Settings</a>
-            </nav>
-        </div>
+        <nav>
+            <a href="#">Explore</a>
+            <a href="#">Favorites</a>
+            <a href="#">Settings</a>
+        </nav>
+        <h1>Welcome to Aidan Gu's Website</h1>
     </header>
 
     <main>
-        <div id="map">
-            <!-- Map content could go here -->
-            <p>This is where the map content goes.</p>
-        </div>
+        <div id="map"></div>
     </main>
 
     <footer>
-        <p>© 2023 Map-Like Website. All rights reserved.</p>
+        <p>© 2023 Aidan Gu Map Website. All rights reserved.</p>
     </footer>
 </body>
 </html>
